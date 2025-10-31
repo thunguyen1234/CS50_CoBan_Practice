@@ -3,3 +3,14 @@
 ; Khai báo một con trỏ dia_chi_con_tro kiểu int * và gán cho nó địa chỉ của so_nguyen.
 ; Sử dụng chỉ một lệnh printf duy nhất để in ra giá trị của so_nguyen bằng cách giải tham chiếu con trỏ dia_chi_con_tro.
 ; (Gợi ý: Dùng %i để in ra số nguyên, và toán tử giải tham chiếu là *.)
+
+#include <stdio.h>
+
+int main(void){
+
+    int so_nguyen = 2025;
+    int *dia_chi_con_tro = &so_nguyen;
+    printf("%i\n", *dia_chi_con_tro);
+    return 0;
+
+}

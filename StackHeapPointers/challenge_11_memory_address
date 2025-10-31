@@ -1,0 +1,5 @@
+; Viết một chương trình C hoàn chỉnh để:
+; Khai báo một biến so_nguyen kiểu int và gán giá trị $2025$.
+; Khai báo một con trỏ dia_chi_con_tro kiểu int * và gán cho nó địa chỉ của so_nguyen.
+; Sử dụng chỉ một lệnh printf duy nhất để in ra giá trị của so_nguyen bằng cách giải tham chiếu con trỏ dia_chi_con_tro.
+; (Gợi ý: Dùng %i để in ra số nguyên, và toán tử giải tham chiếu là *.)

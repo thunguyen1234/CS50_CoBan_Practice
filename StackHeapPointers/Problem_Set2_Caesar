@@ -1,0 +1,56 @@
+#include<stdio.h>
+
+#include<cs50.h>
+
+#include<string.h>
+
+int main(void){
+
+    int key;
+
+    do{
+
+        key = get_int("nhập mã khóa (key, số nguyên dương): ");
+
+    if(key<=0)
+
+    {
+
+         printf("vui lòng nhập số nguyên dương lớn hơn 0\n");
+
+    }
+
+}
+
+    while(key<=0);
+
+    printf("khóa hợp lệ đã được lưu: %i\n", key);
+
+   
+
+    string chuoi_thay_the = get_string("nhập thông điệp cần mã hóa: ");
+
+    for (int i=0; i<strlen(chuoi_thay_the); i++){
+
+char ky_tu =chuoi_thay_the[i];
+ char ky_tu_da_ma_hoa;
+printf("ký tự gốc tại chỉ mục %i là: %c\n", i, ky_tu);
+
+if(ky_tu>='A' && ky_tu<='Z'){
+    //%26 để tránh vượt quá chữ Z : mod 26
+    // -'A' để đưa về 0-25
+    //+ 'A' để đưa về lại mã ASCII
+    ky_tu_da_ma_hoa = (ky_tu - 'A'+ key)% 26+'A';
+    }
+    else if (ky_tu>='a' && ky_tu<='z'){
+    ky_tu_da_ma_hoa = (ky_tu - 'a'+ key) % 26 +'a';
+    }
+    else{
+        ky_tu_da_ma_hoa = ky_tu;
+    }
+printf("ký tự đã mã hóa tại chỉ mục %i là: %c\n", i, ky_tu_da_ma_hoa);
+    
+}
+ return 0;
+
+}

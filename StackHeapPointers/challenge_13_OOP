@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<cs50.h>
+struct Phanso {
+    int tuso;
+    int mauso;
+};
+double tinh_thap_phan(struct phanso ps){
+ return (double)ps.tuso/ ps.mauso;
+}   
+int main(void){
+struct phanso ps1;
+    ps1.tuso =2;
+    ps1.mauso =3;
+
+double ket_qua = tinh_thap_phan(ps1);
+printf("gia tri thap phan: %f\n", ket_qua);
+return 0;
+}

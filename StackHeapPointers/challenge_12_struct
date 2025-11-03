@@ -1,0 +1,33 @@
+**/Thách thức Thực hành 12: Struct và Tính Toán Để đơn giản hóa,
+chúng ta sẽ tạo một struct chỉ chứa số nguyên.Thách thức:Viết một chương trình C hoàn chỉnh để:
+Định nghĩa một struct có tên là PhanSo, chứa hai trường int: tu_so và mau_so.
+Trong main(),
+khai báo hai biến struct PhanSo: ps1 và ps2.
+Gán giá trị:ps1: Tử số = 1, Mẫu số = 2
+ps2: Tử số = 3, Mẫu số = 4
+Tính Tổng (Logic): Tính tổng hai phân số:
+$Tổng = \frac{1}{2} + \frac{3}{4} = \frac{5}{4}$.
+Tử số mới: $(ps1.tu\_so \times ps2.mau\_so) + (ps2.tu\_so \times ps1.mau\_so)
+Mẫu số mới: $(ps1.mau\_so \times ps2.mau\_so)
+In ra màn hình: In ra kết quả tổng dưới dạng số thập phân (dùng phép chia số thực).
+(Gợi ý: Dùng Toán tử Số học và nhớ ép kiểu sang float hoặc double khi tính toán cuối cùng!)/**
+
+#include<stdio.h>
+#include<cs50.h>
+struct phanso {
+    int tuso;
+    int mauso;
+};
+int main(void){
+struct phanso ps1;
+struct phanso ps2;
+ps1.tuso = 1;
+ps1.mauso = 2;
+ps2.tuso = 3;       
+ps2.mauso = 4;
+tu_So_tong =  ( ps1.tuso* ps2.mauso)+( ps2.tuso* ps1.mauso);
+mauso_tong = ( ps1.mauso* ps2.mauso);
+double tinhtong = (double)tu_So_tong / mauso_tong;
+printf("%f\n", tinhtong);
+return 0;
+}

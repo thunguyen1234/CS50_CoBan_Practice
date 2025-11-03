@@ -1,3 +1,11 @@
+// Viết một chương trình C (sử dụng các khái niệm đã học) 
+// để mã hóa một thông điệp bằng khóa (key) mà người dùng nhập vào.
+// Hỏi người dùng một khóa (key) là một số nguyên dương $K$ (ví dụ: $K=3$).
+// Hỏi người dùng thông điệp cần mã hóa.Mã hóa thông điệp bằng cách dịch 
+// chuyển mỗi chữ cái $K$ vị trí trong bảng chữ cái. 
+// (Ví dụ: $K=3$, $A \to D$).Đây là một dự án phức tạp hơn, đòi hỏi: Vòng lặp, 
+// Mảng (Chuỗi Ký tự), Điều kiện (if-else) và sử dụng Modulo (%) để "cuộn" lại bảng chữ cái. 
+
 #include<stdio.h>
 
 #include<cs50.h>

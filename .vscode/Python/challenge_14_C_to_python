@@ -1,0 +1,11 @@
+Viết lại thuật toán sau đây bằng Python:
+
+Lấy Input: Hỏi tên người dùng và lưu vào biến name.
+
+Vòng lặp: Dùng vòng lặp for để đi qua từng chữ cái trong tên đó.
+
+Output: In ra mỗi chữ cái trên một dòng.
+name= input ("Tên: ");
+for char in name:
+    print("ký tự :", char)
+

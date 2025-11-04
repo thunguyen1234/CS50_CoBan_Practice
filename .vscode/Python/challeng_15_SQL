@@ -1,0 +1,18 @@
+
+🚀 Thách thức Thực hành 15: Truy vấn SQL
+Hãy tưởng tượng bạn có bảng sach với cấu trúc sau:
+
+id	tieu_de	tac_gia	nam_xuat_ban
+1	Toan	Nguyen	2020
+2	Van	Le	2022
+3	Su	Tran	2020
+Thách thức:
+
+Viết lệnh SQL để giải quyết hai truy vấn sau:
+
+Truy vấn 1: Lấy tieu_de và tac_gia của tất cả các cuốn sách được xuất bản sau năm 2020.
+
+Truy vấn 2: Chèn một cuốn sách mới có tên 'Anh', tác giả 'Ly', xuất bản năm 2023 vào bảng sach.
+
+SELECT tieu_de AND tac_gia FROM sach WHERE nam_xuat_ban > 2020;
+INSERT INTO sach(tieu_de,tac_gia,nam_xuat_ban) VALUES ('Anh','Ly',2023);

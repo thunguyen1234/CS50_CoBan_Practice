@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "challenge_13_oop": "c"
+        "challenge_13_oop": "c",
+        "final_challenge": "cpp"
     }
 }

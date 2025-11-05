@@ -1,0 +1,51 @@
+public class Phanso
+{
+    // class định nghĩa tất cả các variable and method.
+    int tuso;
+    int mauso;
+    // constructor: duy nhất 1 lần khi tạo object mới:
+    // mục đích là gán giá trị ban đầu cho các biến thành viên.
+    // đảm bảo đối tượng luôn ở trạng thái hợp lệ. tên constructor trùng tên class.
+public
+    Phanso(int t, int m)
+    {
+        this.tuso = t;
+        this.mauso = m;
+    }
+    // method
+    //public: cho phép gọi phương thức này được gọi từ bất kì đâu trong chương trình.
+    //Phan so: kiểu trả về của phương thức: method này trả về một đối tượng kiểu Phanso.
+    //cong: tên phương thức.
+    // (Phanso pskhac): tham số truyền vào phương thức: một đối tượng kiểu Phanso.
+
+public 
+    Phanso cong(Phanso pskhac)
+    {
+        int tu_so_moi = t * pskhac.mauso + pskhac.tuso * m;
+        int mau_so_moi = m * pskhac.mauso;
+        return new Phanso(tu_so_moi, mau_so_moi);
+    }
+    //static: phương thức tĩnh,nghĩa là hàm này thuộc class,
+    // không phụ thuộc vào bất kỳ đối tượng cụ thể nào của lớp.
+    //void: kiểu trả về của phương thức: method này không trả về giá trị nào.
+   // String[] args: được sử dụng để nhận được tham số dòng lệnh (command-line arguments) khi chương trình được chạy.
+public double tinh_gia_tri_thap_phan(){
+return (double) tuso / mauso;
+}
+    {
+        return (double) this.tuso / this.mauso;
+    }
+public
+    static void main(String[] args)
+    {
+        //Phanso ps1 : Lệnh tạo đối tượng;
+        //new: từ khóa bắt buộc yêu cầu java cấp phát bộ nhớ trên heap cho đối tượng mới.
+        //Phanso(1, 2): lệnh gọi constructor để khởi tạo giá trị ban đầu cho các biến thành viên.
+        // biên ps1 lưu trữ trên stack, tham chiếu đến đối tượng Phanso được tạo trên heap.
+        Phanso ps1 = new Phanso(1, 2);
+        phanso ps2 = new Phanso(3, 4);
+        Phanso tong = ps1.cong(ps2);
+        System.out.println("tổng hai phân số là: " + tong.tuso + "/" + tong.mauso);
+        System.out.println("giá trị thập phân của tổng là: " + tong.tinh_gia_tri_thap_phan());
+    }
+}

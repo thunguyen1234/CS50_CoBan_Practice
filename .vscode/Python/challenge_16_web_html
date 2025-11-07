@@ -1,0 +1,17 @@
+Thách thức Thực hành 16: Cấu trúc HTML
+Chúng ta sẽ tạo một cấu trúc HTML đơn giản.
+
+Thách thức:
+
+Viết code HTML cơ bản để tạo ra một trang web có cấu trúc sau:
+
+Tiêu đề chính (h1) nội dung: "Hồ Sơ Nhân Viên".
+
+Một đoạn văn (p) ngay dưới tiêu đề, nội dung: "Thông tin cá nhân được lấy từ SQL Database.".
+
+Một Nút bấm (button) với nội dung: "Cập nhật Hồ sơ".
+
+(Gợi ý: Không cần thêm CSS hay cú pháp hoàn chỉnh, chỉ cần các thẻ cấu trúc.)
+<h1>Hồ sơ Nhân Viên</h1>
+<p>Thông tin cá nhân được lấy từ SQL Database.</p>
+<button>Cập nhật Hồ sơ</button>

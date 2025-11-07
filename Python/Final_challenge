@@ -1,3 +1,27 @@
+//Hệ thống Quản lý Phân số
+
+// Viết một chương trình (hoặc mô tả logic chi tiết bằng ngôn ngữ lập trình Java/hoặc Python) để thực hiện các yêu cầu sau:
+
+// Định nghĩa Lớp (Class): Tạo một Class tên là PhanSo (tương đương với struct bạn đã làm trong C).
+
+// Class này phải có hai Biến thành viên (Member Variables): tuSo và mauSo.
+
+// Phương thức (Methods): Thêm vào Class các Hành động:
+
+// Constructor: Phương thức để tạo đối tượng PhanSo mới (ví dụ: new PhanSo(1, 2)).
+
+// tinhGiaTri(): Phương thức trả về giá trị thập phân của phân số.
+
+// cong(PhanSo ps_khac): Phương thức nhận vào một đối tượng PhanSo khác và trả về một đối tượng PhanSo mới là tổng của hai phân số.
+
+// Trong hàm main():
+
+// Tạo hai đối tượng: PhanSo p1 = 1/2 và PhanSo p2 = 3/4.
+
+// Tính tổng: PhanSo tong = p1.cong(p2);
+
+// In ra giá trị thập phân của tong.
+//Lưu ý: Sử dụng các khái niệm về Lớp (Class) và Đối tượng (Object) trong lập trình hướng đối tượng (OOP) để giải quyết bài toán này.
 public class Phanso
 {
     // class định nghĩa tất cả các variable and method.

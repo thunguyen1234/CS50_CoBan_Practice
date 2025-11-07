@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+public class ScoreProcessor{
+public static void main(String[] args){
+    ArrayList<Integer> scores = new ArrayList<>();
+    scores.add(85);
+    scores.add(90);
+    scores.add(78);
+    scores.add(92);
+    for(int num: scores){
+        if(num>10){
+            System.out.println(num + " is greater than 10.");
+        }
+    }
+}
+}

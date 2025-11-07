@@ -1,0 +1,11 @@
+public class numberProcessor{
+
+public static void main(String[] args){
+int[] numbers ={5, 12, 7, 20, 3, 15};
+for(int num : numbers){
+    if(num%2==0){
+        System.out.println(num + " is even.");
+    };
+}
+}
+}

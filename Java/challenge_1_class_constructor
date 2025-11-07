@@ -1,0 +1,19 @@
+public class Car{
+    String color;
+    int year;
+    //constructor
+      public  Car(String c, int y){
+        //this : phân biệt cho biến truyền vào c, y và biến thành viên color, year
+            this.color = c; // gán giá trị ban đầu cho các biến thành viên color,year
+            this.year = y;// biến thành viên
+        }
+        public void drive(){
+System.out.println("The " + color +" from "+ year + " car is driving!");
+        }
+        public static void main (String[] args){
+            Car myCar = new Car("Red", 2025);
+            System.out.println("Color: " + myCar.color);
+            System.out.println("Year: " + myCar.year);
+            myCar.drive();
+        }
+}

@@ -18,12 +18,16 @@ import java.util.HashMap;
 //sau đó in ra thông báo tương ứng.
 public class challenge7Hashmap{
 
-HashMap<String, Integer> population = new HashMap<>();
+
 
 public void printPopulation(){
+    //khai báo hashmap- biến thành viên
+    HashMap<String, Integer> population = new HashMap<>();
+    //constructor: thêm cặp key-value
 population.put("Viet Nam", 99000);
 population.put("Sing", 1000);
 population.put("China", 1000000);
+//method get() và containsKey()
 
 int VietNam_population = population.get("Viet Nam");
 boolean check_vietnam = population.containsKey("Viet Nam");

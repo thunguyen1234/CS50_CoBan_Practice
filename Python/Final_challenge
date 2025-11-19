@@ -22,6 +22,7 @@
 
 // In ra giá trị thập phân của tong.
 //Lưu ý: Sử dụng các khái niệm về Lớp (Class) và Đối tượng (Object) trong lập trình hướng đối tượng (OOP) để giải quyết bài toán này.
+import
 public class Phanso
 {
     // class định nghĩa tất cả các variable and method.

@@ -13,6 +13,8 @@ public class Main {
       
       libraryManager.addDocument("B111", new Book("New book", 2024, "new author"));
       libraryManager.displayAll();
+      libraryManager.deleteDocument("B111");
+      libraryManager.displayAll();
     }
     
 }
